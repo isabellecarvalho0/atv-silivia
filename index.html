@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE GUCCI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SITE GUCCI</h1>
+        <nav>
+            <a href="https://www.gucci.com/pt/en_gb/?utm_medium=geolocation&utm_source=gucci-WW&utm_campaign=page" id="home-link">Home</a>
+            <a href="https://www.gucci.com/pt/en_gb/ca/men/travel-bags-for-men-c-men-bags-trolleys" id="contato-link">Contato</a>
+            <a href="https://www.gucci.com/pt/en_gb/st/capsule/beauty-lips-make-up" id="sobre-link">Sobre</a>
+        </nav>
+    </header>
+
+    <div id="corpo">
+        <p>
+            <b> Bem-vindo ao meu site!</b>
+        </p>
+
+        <p>
+            Atalhos utilizados na página:<br>
+            CTRL + Q serve para acessar o link Sobre da página;<br>
+            CTRL + I serve para acessar o link da imagem da página;<br>
+            CTRL + M serve para acessar o bloco de mensagem da página;<br>
+        </p>
+
+        <a href="https://via.placeholder.com/400" target="_blank" id="imagem-link">
+            <img src="gucci1.jpg" alt="Imagem placeholder">
+        </a>
+
+        <div id="mensagem-form">
+            <input type="text" id="mensagem-input" placeholder="Digite sua mensagem">
+            <button id="enviar-btn">Enviar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Isabelle Maria</p>
+    </footer>
+
+    <script>
+        document.addEventListener("keydown", function(event){
+            if(event.ctrlKey && event.key === "q") {
+                window.location.href = "https://www.gucci.com/pt/en_gb/?utm_medium=geolocation&utm_source=gucci-WW&utm_campaign=page";
+            }
+            if(event.ctrlKey && event.key === "i") {
+                window.open("gucci1.jpg");
+            }
+            if(event.ctrlKey && event.key === "m") {
+                document.getElementById("mensagem-input").focus();
+            }
+        });
+    </script>
+</body>
+</html>
